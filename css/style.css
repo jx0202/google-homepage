@@ -1,0 +1,89 @@
+body {
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.about-store {
+    grid-area: top-left;
+    justify-self: start;
+}
+
+.gmail-images-signin {
+    grid-area: top-right;
+    justify-self: end;
+}
+
+.search-box {
+    grid-area: mid-center;
+    justify-self: center;
+    display: grid;
+    padding: 150px;
+}
+
+.logo {
+    justify-self: center;
+    padding: 10px;
+}
+
+.search-text {
+    justify-self: center;
+    padding: 10px;
+}
+
+#textbox {
+    width: 40em;
+}
+
+#sign-in-button {
+    background-color: #4387fd;
+    border: #4387fd;
+    color: white;
+    font-weight: bold;
+}
+
+.search-buttons {
+    justify-self: center;
+    padding: 10px;
+}
+
+.country {
+    grid-area: country;
+    justify-self: auto;
+}
+
+.ad-bus-how {
+    grid-area: bot-left;
+    justify-self: start;
+
+}
+
+.priv-terms-settings {
+    grid-area: bot-right;
+    justify-self: end;
+
+}
+
+.footer {
+    grid-area: footer;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "country ."
+        "bot-left bot-right";
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "top-left top-right"
+        "mid-center mid-center"
+        "footer footer";
+}
